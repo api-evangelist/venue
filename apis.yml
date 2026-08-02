@@ -1,9 +1,26 @@
 aid: venue
 name: Venue
-description: 'Venue is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: productivity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Venue is an all-in-one internal communications platform that makes it easy for teams to
+  host, organize, and share all hands, webinars, AMAs, and fireside chats. It combines HD live streaming,
+  recording, automatic transcription and summarization, branded Q&A, engagement tracking, and Channels
+  for centralizing events and videos. Aimed at internal comms and employer-brand teams at companies like
+  Shopify, PwC, Wealthsimple, and Yelp, Venue is a Toronto-based, Accel- and Y Combinator-backed
+  productivity company. As of this enrichment pass Venue publishes no public developer API, SDK, or API
+  documentation surface — this profile captures its identity, website properties, and domain security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/venue/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/640a339a2066db0f1678339f/641475bde77ff9428221f80a_venue-og.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Productivity
+- Internal Communications
+- Video
+- Webinars
+- Events
+- Live Streaming
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/venue-domain-security.yml
 - type: Website
-  url: http://venue.live
+  url: https://venue.live
+- type: Blog
+  url: https://venue.live/blog
+- type: Pricing
+  url: https://venue.live/pricing
+- type: TermsOfService
+  url: https://venue.live/terms
+- type: PrivacyPolicy
+  url: https://venue.live/privacy-policy
+- type: Support
+  url: https://venuelive.notion.site/Venue-Help-Section-52d268a8fde344d3b6151b1842b2f6c7
+- type: Login
+  url: https://app.venue.live/dashboard/login
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
